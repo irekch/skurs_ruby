@@ -11,4 +11,3 @@ include Math
 puts sqrt(3)
 puts PI
 
-#---------Moduly Wlasne--------------------------------------

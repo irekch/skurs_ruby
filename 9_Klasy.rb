@@ -63,7 +63,7 @@ puts audi.silnik
 =end
 
 #-----------------Klasy-Inicjalizacja metod---------------------
-#=begin
+=begin
 class Samochod
 	attr_accessor :rodzaj, :paliwo
 	def initialize (nadwozie)
@@ -86,7 +86,7 @@ audi = Samochod.new ("combi")
 audi.rodzaj = "2,6 Turbo"
 audi.paliwo = "95Pb"
 puts fiat.informacje
-#=end
+=end
 
 #-----------KLASY-Zmienne Klasowe, Metody------------------------
 =begin
@@ -132,13 +132,17 @@ ford.paliwo = "98Pb"
 puts ford.informacje
 puts Samochod.produkcja
 
-VW = Samochod.new ("buggy")
-puts ford.informacje
+puts"\n"
+
+vw = Samochod.new ("buggy")
+vw.rodzaj = "3,0 Turbo"
+vw.paliwo = "lotnicze"
+puts vw.informacje
 puts Samochod.produkcja
 =end
 
 #--------------------DZIEDZICZENIE-----------------------------------------------
-=begin
+#=begin
 class Pojazd
 	def kola
 		@kola = "kola: 4 sztuki"
@@ -177,4 +181,4 @@ puts "Samochod Audi"
 audi = Samochod.new
 puts audi.silnik
 puts audi.kola
-=end
+#=end

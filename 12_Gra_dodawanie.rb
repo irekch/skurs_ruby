@@ -41,7 +41,7 @@ class GraDodawanie
 				koniec
 			else
 				puts "\nTwoja odpowiedz: #{@odpowiedz}"
-				puts "To jest zla odpowiedz:("
+				puts "To jest zla odpowiedz :("
 				@punktacja -= 1
 			end
 		end

@@ -1,10 +1,11 @@
 # Modul Wlasny - Ogloszenie
-# Ogloszenie sprzedazy motoru plik 10_Modul_ogloszenieMotor.rb
+# Ogloszenie sprzedazy motoru w pliku 10_Modul_ogloszenieMotor.rb
+# gdzie znajduje sie zarowno module "Parametry", jak i "ogloszenie"
 
 load "10_modul_ogloszenie.rb"
 
 class Gielda
-	include Parametry
+	include Parametry	# module Parametry jest w 10_Modul_ogloszenieMotor.rb
 end
 
 class Motor < Gielda

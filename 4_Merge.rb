@@ -36,15 +36,16 @@ puts ala.merge(ewa){|klucz, stara, nowa| nowa + stara}
 
 puts "\n"
 
-puts ala.merge(ewa){|cos, a, b| a+b}
+puts ala.merge(ewa){|klucz, a, b| a+b}
 # przyklad uzycia innych nazw, nazwy moga byc dowolne
 
-puts ala.merge(ewa){|cos, a, b| (a+b)*2}
+puts ala.merge(ewa){|klucz_cokolwiek, a, b| (a+b)*2}
 #wynik mozna pomnozyc
+
 
 #puts ala.merge(ewa){|cos, a, b| 123}
 # zamast laczyc wartosci z tabel, mozna przypisac liczbe tam,
-# gdzie sa powtorzenia
+# gdzie sa powtorzenia, tutaj banany i cebule maja wartosc 123
 
 #puts ala.merge!(ewa){|cos, a, b| (a+b)*2}
 # mozna zlaczyc tabele na stale przy pomocy !

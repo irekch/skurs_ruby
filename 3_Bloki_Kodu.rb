@@ -9,13 +9,13 @@
 #["ola", "ewa", "ala"].each {|imie| puts imie.capitalize}
 
 #----------------------------------------------------------
+=begin
+imiona = ["ola", "ewa", "ala"]
 
-#imiona = ["ola", "ewa", "ala"]
-
-#imiona.each do |imie| 
-#	puts "Witaj: #{imie.upcase} w kursie Ruby!"
-#end
-
+imiona.each do |imie| 
+	puts "Witaj: #{imie.upcase} w kursie Ruby!"
+end
+=end
 #----------------------------------------------------------
 
 #	Bloki kodu - Metody
@@ -38,6 +38,8 @@
 
 oceny = [1, 2, 3, 4, 5, 6, 1, 2, 3]
 
-#p oceny.delete_if {|oceny| oceny <3}
+p oceny.delete_if {|oceny| oceny <3}
+# daje [3, 4, 5, 6, 3] czyli wycina oceny ponizej 3
 
-p oceny.select {|oceny| oceny <3}
+#p oceny.select {|oceny| oceny <3}
+# daje [1, 2, 1, 2]

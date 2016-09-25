@@ -16,37 +16,43 @@
 
 #-----------------------------------------------------------
 #	Argumenty do metody
+=begin
+def powitanie (osoba)
+	napis = "Witaj #{osoba} na kursie Ruby!"
+	puts napis
+end
 
-#def powitanie (osoba)
-#	napis = "Witaj #{osoba} na kursie Ruby!"
-#	puts napis
-#end
+powitanie ("Adam")
+powitanie ("Ewa")
+=end
 
-#powitanie ("Adam")
-#powitanie ("Ewa")
-
+#------------------------------------------------------------
 #	uzycie kilku argumentow
+=begin
+def powitanie (osoba, lekcja)
+	napis = "Witaj #{osoba} w kursie Ruby, na lekcji nr #{lekcja} !"
+	puts napis
+end
 
-#def powitanie (osoba, lekcja)
-#	napis = "Witaj #{osoba} w kursie Ruby, na lekcji nr #{lekcja} !"
-#	puts napis
-#end
+powitanie("Adam", 1)
+powitanie("Ewa", 10)
+=end
 
-#powitanie("Adam", 1)
-#powitanie("Ewa", 10)
-
+#----------------------------------------------------------------
 #	uzycie argumentow domyslnych
+=begin
+def powitanie (osoba = "uczniu", lekcja = 1)
+	napis = "Witaj #{osoba} na kursie Ruby, na lekcji nr #{lekcja} !"
+	puts napis
+end
 
-#def powitanie (osoba = "uczniu", lekcja = 1)
-#	napis = "Witaj #{osoba} w kursie Ruby, na lekcji nr #{lekcja} !"
-#	puts napis
-#end
+powitanie()		#przy wywolaniu bez deklaracji uzyte sa argument domyslne
+powitanie("Adam")	#zadeklarowany arg. wiec zostal uzyty, a drugi domyslny
+powitanie("Adam", 2)
+powitanie("Ewa", 10)
+=end
 
-#powitanie()		#przy wywolaniu bez deklaracji uzyte sa argument domyslne
-#powitanie("Adam")	#zadeklarowany arg. wiec zostal uzyty, a drugi domyslny
-#powitanie("Adam", 2)
-#powitanie("Ewa", 10)
-
+#------------------------------------------------------------------
 #	metoda zwraca ZAWSZE zawartosc ostatniej zmiennej.
 #	return - wyswietlenie wart. dowolnej zmiennej z wnetrza metody
 

@@ -18,7 +18,7 @@ fiat.kola	#drukuje "kola sztuk 4"
 =begin
 osoba	# zmienna lokalna
 $osoba	# zmienna globalna
-@osoba	# zmienna instancji
+@osoba	# zmienna instancji, obowiazuje w obrebie obiektu
 @@osoba	# zmienna klasowa
 =end
 #------------- Zmienne instancji------------------------------------
@@ -40,10 +40,11 @@ audi = Samochod.new
 audi.zapisz_silnik("2,6 Turbo")
 puts audi.czytaj_silnik
 =end
+
 #------------------Klasy - Akcesory----------------------------------
 =begin
 class Samochod
-	attr_accessor :rodzaj, :paliwo
+	attr_accessor :rodzaj, :paliwo		# uzywam akcesorow
 	
 	def silnik
 		"silnik typ: #{@rodzaj}, paliwo: #{@paliwo}"	#deklaruje zmienna instancji
@@ -53,15 +54,16 @@ end
 fiat = Samochod.new
 fiat.rodzaj = "1,2 TDI"
 fiat.paliwo = "ON"
-puts fiat.silnik
+puts "Fiat- #{fiat.silnik}"
 
 audi = Samochod.new
 audi.rodzaj = "2,6 Turbo"
 audi.paliwo = "95 Pb"
 puts audi.silnik
 =end
+
 #-----------------Klasy-Inicjalizacja metod---------------------
-=begin
+#=begin
 class Samochod
 	attr_accessor :rodzaj, :paliwo
 	def initialize (nadwozie)
@@ -84,7 +86,7 @@ audi = Samochod.new ("combi")
 audi.rodzaj = "2,6 Turbo"
 audi.paliwo = "95Pb"
 puts fiat.informacje
-=end
+#=end
 
 #-----------KLASY-Zmienne Klasowe, Metody------------------------
 =begin

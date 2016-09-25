@@ -30,13 +30,13 @@
 
 #----------------------------------------------
 #	petla FOR IN
-
-#for x in (1..3) 	# zakres mozna zapisac 1..5 
-#	puts "Witaj ! " + x.to_s
-#	puts "Witaj ! Nr #{x}"
-#	puts x
-#end
-
+=begin
+for x in (1..3) 	# zakres mozna zapisac 1..5 
+	puts "Witaj ! " + x.to_s
+	puts "Witaj ! Nr #{x}"
+	puts x
+end
+=end
 #----------------------------------------------
 #	petla FOR IN w TABLICACH
 
@@ -94,7 +94,7 @@
 #		x += 1
 #	next if x.between?(3, 5)
 #		puts "Witaj uczestniku nr: #{x}"
-#		puts "Witaj uczestniku nr: " + x.to_s
+#puts "Witaj uczestniku nr: " + x.to_s
 #end
 
 #----------------------------------------------------------

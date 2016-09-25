@@ -12,7 +12,7 @@
 
 class GraZgadywanka
     def initialize
-        system "cls"
+        system "clear"
         @odpowiedz = ""
         @proba = 1
         gra

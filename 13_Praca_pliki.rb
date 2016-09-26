@@ -82,4 +82,6 @@ end
 #--------------------------------------------------------------
 # praca ze wskaznikami, czyli kursorem
 
+plik = File.new("test.txt", "r")
+
 

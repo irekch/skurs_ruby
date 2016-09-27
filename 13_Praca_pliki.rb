@@ -74,14 +74,21 @@ end
 
 # odczyt przy pomocy iteratorow
 
-
+=begin
 File.open("test.txt", "r") do |plik|
     plik.each_line{|wiersz| puts wiersz}
 end
+=end
 
 #--------------------------------------------------------------
-# praca ze wskaznikami, czyli kursorem
+# poruszanie sie wewnatrz pliku
 
 plik = File.new("test.txt", "r")
+
+while wiersz = plik.gets
+    puts "wiersz no: #{plik.lineno} ,tresc: #{wiersz}"
+end
+
+plik.close
 
 

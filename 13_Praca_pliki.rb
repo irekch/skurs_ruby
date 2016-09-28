@@ -114,3 +114,26 @@ File.rename("czytaj.txt", "czytaj_to.txt")
 require 'fileutils'
 
 FileUtils.cp("test.txt", "Test_copy/test_kopia1.txt")
+
+#----------------------------------------------------------------
+# praca z plikami - metody
+
+plik = "test.txt"
+
+# pokazanie, gdzie jest plik
+p File.dirname(plik)
+
+# pokazanie sciezki dostepu do pliku
+p File.expand_path(plik)
+
+# pokazanie rozszerzenia pliku
+p File.extname(plik)
+
+# pokazanie kiedy ktos siegal do pliku
+p File.atime(plik)
+
+# pokazanie daty modyfikacji pliku
+p File.mtime(plik)
+
+# pokazanie daty zmiany wlasciwosci pliku np. wlasciciela
+p File.ctime(plik)

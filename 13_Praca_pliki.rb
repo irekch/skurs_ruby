@@ -83,6 +83,7 @@ end
 #--------------------------------------------------------------
 # poruszanie sie wewnatrz pliku
 
+=begin
 plik = File.new("test.txt", "r")
 
 while wiersz = plik.gets
@@ -90,5 +91,26 @@ while wiersz = plik.gets
 end
 
 plik.close
+=end
 
+#---------------------------------------------------------------
+# zmiana nazwy pliku
+=begin
+plik = File.new("czytaj.txt", "w")
+plik.puts "zmiana nazwy"
+plik.close
 
+File.rename("czytaj.txt", "czytaj_to.txt")
+=end
+
+#----------------------------------------------------------------
+# usuwanie pliku
+
+#File.delete("czytaj_to.txt")
+
+#----------------------------------------------------------------
+# kopiowanie pliku
+
+require 'fileutils'
+
+FileUtils.cp("test.txt", "Test_copy/test_kopia1.txt")

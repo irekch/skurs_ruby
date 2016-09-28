@@ -137,3 +137,18 @@ p File.mtime(plik)
 
 # pokazanie daty zmiany wlasciwosci pliku np. wlasciciela
 p File.ctime(plik)
+
+# sprawdzanie czy nazwa jest katalogiem
+p File.directory?(plik)
+
+# sprawdzanie, czy plik istnieje
+p File.exists?(plik)
+
+# sprawdzanie, czy plik jest odczytywalny
+p File.readable?(plik)
+
+# sprawdzanie, czy w pliku mozna cos zapisac
+p File.writable?(plik)
+
+# sprawdzanie czy plik jest wykonywalny
+p File.executable?(plik)
